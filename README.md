@@ -1,2 +1,1 @@
-# python_basic_review
-My personal study about python
+selenium 관련 복습사항 정리
