@@ -1,0 +1,46 @@
+# Maven 기본 빌드 디렉토리
+target/
+out/
+dependency-reduced-pom.xml
+release.properties
+*.releaseBackup
+*.original
+
+# Maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# Eclipse IDE 관련 파일
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA 관련 파일
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code 관련 파일
+.vscode/
+
+# 로그 파일
+*.log
+
+# 환경 설정 파일
+.env
+*.properties
+
+# OS 별 파일
+.DS_Store
+Thumbs.db
+
+# 임시 파일
+*.tmp
+*.swp
+*.swo
+~*
+
+# 테스트 결과
+*.test
