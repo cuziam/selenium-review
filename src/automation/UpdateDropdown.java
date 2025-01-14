@@ -27,11 +27,16 @@ public class UpdateDropdown {
 		//동적 드롭다운을 선택할 때 문제점=>아직 로딩이 안되어있을 때 선택하려고 하면 오류가 발생할 수 있다.
 		//그리고 동일한 요소 2개 여러 개 있을 때도 대비해야한다.
 		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
+		//click departure city
 		driver.findElement(By.xpath("//a[@value='BLR']")).click();
 		Thread.sleep(2000);
 		//driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click(); //아래 코드가 훨씬 낫다.
+		//click arrival city
 		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
-		driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();
+		Thread.sleep(1000);
+		//click departure date
+		driver.findElement(By.xpath("//td[@data-handler='selectDay']/a[text()='8']")).click();
+		System.out.println(driver.findElement(By.xpath("//td[@data-handler='selectDay']/a[text()='8']")).isEnabled());
 				
 	}
 
