@@ -17,7 +17,7 @@ public class Scope {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-
+/*
 		// 1
 		System.out.println(driver.findElements(By.tagName("a")).size());
 
@@ -32,7 +32,7 @@ public class Scope {
 		// 차례대로 접근이 안된다.
 		// 그렇다고 일일이 클릭하고 뒤로 가기를 누르기도 좀 그렇다.
 		// 따라서 윈도우 핸들 메소드를 사용하는 게 좋을 것이다.
-		
+		*/
 		//일단 열고
 		for (int i = 1; i < columnDriver.findElements(By.tagName("a")).size(); i++) {
 			String clickonlinkTab = Keys.chord(Keys.CONTROL, Keys.ENTER);
